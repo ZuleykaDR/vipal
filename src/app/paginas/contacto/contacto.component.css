@@ -8,22 +8,33 @@
         text-decoration: none;
         /*border: 1px solid wheat;*/
     }
-    
+
+    #banner {
+        position: relative;
+    }
+
     #banner img {
         width: 100%;
     }
-    
-    #banner .tituloS {
+
+    #divTituloBanner {
         position: absolute;
-        top: 450px;
-        left: 7%;
-        font-weight: 900;
+        bottom: 20%;
+        left: 3%;
         font-family: 'Roboto', sans-serif;
         color: rgb(255, 255, 255);
         text-shadow: 1px 1px black;
-        font-size: 2.7rem;
     }
-    
+
+    #divTituloBanner>h1 {
+        font-size: 3rem;
+        font-weight: 900 !important;
+    }
+    #divTituloBanner>h3 {
+        font-size: 1.7rem;
+        font-weight: 600 !important;
+    }
+
     #datos {
         width: 80%;
         position: relative;
@@ -35,7 +46,7 @@
         margin: -57px auto;
         margin-bottom: 10px;
     }
-    
+
     #datos>div {
         width: 30%;
         padding: 15px;
@@ -46,41 +57,39 @@
         border: 1px solid grey;
         border-radius: 30px;
     }
-    
+
     #datos>div>i {
         font-size: 1.7em;
         margin-bottom: 15px;
         color: rgb(245, 240, 240);
     }
-    
+
     #datos>div>h4 {
         margin-bottom: -10px;
         font-size: 1.5rem;
         color: rgb(240, 238, 238);
     }
-    
-    #datos>div,
-    p,
-    h4 {
+
+    #datos>div, p, h4 {
         margin-bottom: 5px;
         margin-top: 29px;
         font-family: 'Noto Sans', sans-serif;
         font-size: 1rem;
         color: rgb(248, 245, 245);
     }
-    
+
     @media screen and (max-width: 1800px) {
         div#wrapContacto {
             width: 80%;
         }
     }
-    
+
     @media screen and (max-width: 1600px) {
         div#wrapContacto {
             width: 90%;
         }
     }
-    
+
     @media screen and (max-width: 1400px) {
         div#wrapContacto {
             width: 100%;
@@ -89,7 +98,7 @@
             top: 350px;
         }
     }
-    
+
     @media screen and (max-width: 1170px) {
         div#wrapContacto>div:nth-child(2) {
             display: none;
@@ -101,7 +110,7 @@
             top: 288px;
         }
     }
-    
+
     @media screen and (max-width: 992px) {
         div#wrapContacto>div:nth-child(1) {
             width: 80%;
@@ -110,22 +119,8 @@
             top: 237px;
         }
     }
-    
-    @media screen and (max-width: 900px) {
-        div#banner .tituloS {
-            top: 218px;
-            font-size: 2.2rem;
-        }
-    }
-    
+
     @media screen and (max-width: 768px) {
-        div#wrapContacto>div:nth-child(1) {
-            width: 85%;
-        }
-        div#banner .tituloS {
-            top: 182px;
-            font-size: 2.2rem;
-        }
         div#datos {
             width: 90%;
             display: flex;
@@ -138,22 +133,19 @@
             width: 60%;
             margin: 20px auto;
         }
-    }
+
+        #divTituloBanner {
+            bottom: 10%;
+        }
     
-    @media screen and (max-width: 605px) {
-        div#banner .tituloS {
-            top: 140px;
-            font-size: 2.2rem;
+        #divTituloBanner>h1 {
+            font-size: 2.5rem;
+        }
+        #divTituloBanner>h3 {
+            font-size: 1.2rem;
         }
     }
-    
-    @media screen and (max-width: 587px) {
-        div#banner .tituloS {
-            top: 133px;
-            font-size: 2.2rem;
-        }
-    }
-    
+
     @media screen and (max-width: 576px) {
         div#wrapContacto>div:nth-child(1) {
             width: 95%;
@@ -168,8 +160,19 @@
         div#banner img {
             width: 100%;
         }
-    }
+
+        #divTituloBanner {
+            bottom: 8%;
+        }
     
+        #divTituloBanner>h1 {
+            font-size: 2rem;
+        }
+        #divTituloBanner>h3 {
+            font-size: 1rem;
+        }
+    }
+
     @media screen and (max-width: 440px) {
         div#wrapContacto>div:nth-child(1) {
             width: 100%;
@@ -182,41 +185,51 @@
             width: 80%;
             margin: 20px auto;
         }
-    }
-    
-    @media screen and (max-width: 340px) {
-        div#banner .tituloS {
-            top: 83px;
-            font-size: 1.6rem;
+
+        #divTituloBanner {
+            bottom: 4%;
         }
+    
+        #divTituloBanner>h1 {
+            font-size: 1.5rem;
+            line-height: 1;
+        }
+        #divTituloBanner>h3 {
+            font-size: 0.8rem;
+            line-height: 1;
+        }
+    }
+
+    @media screen and (max-width: 340px) {
         div#datos>div {
             width: 100%;
             margin: 20px auto;
         }
     }
-    
-    h3,
-    mat-label,
-    mat-hint,
-    textarea {
+
+    h1, h3 {
+        font-family: 'Nunito Sans', sans-serif;
+    }
+
+    h3, mat-label, mat-hint, textarea {
         font-family: 'Nunito Sans', sans-serif;
         color: rgb(255, 255, 255) !important;
     }
-    
+
     input {
         background-color: none !important;
         background: none;
         color: white;
     }
-    
+
     .rojo {
         color: tomato !important;
     }
-    
+
     .labelChico {
         font-size: 0.7rem !important;
     }
-    
+
     #wrapContacto {
         /* border: 1px solid red; */
         width: 70%;
@@ -225,7 +238,7 @@
         flex-direction: row;
         justify-content: space-around;
     }
-    
+
     #wrapContacto>div {
         /* border: 1px solid blue; */
         width: 45%;
@@ -233,33 +246,33 @@
         justify-content: center;
         align-items: center;
     }
-    
+
     form {
         /* border: 1px solid yellow; */
         display: flex;
         flex-direction: column;
         width: 80%;
     }
-    
+
     form>h3 {
         text-align: center;
         font-weight: 900;
         text-shadow: 1px 1px black;
         font-size: 1.7rem;
     }
-    
+
     .inputsForm {
         /* border: 1px solid purple; */
     }
-    
+
     mat-form-field {
         width: 100%;
     }
-    
+
     #mensaje {
         height: 200px;
     }
-    
+
     #btnSubmit {
         background-color: none !important;
         background: none !important;
@@ -275,23 +288,22 @@
         cursor: pointer;
         transition: all 0.3s;
     }
-    
+
     #btnSubmit:hover {
         border-radius: 30px;
     }
-    
+
     #wrapContacto>div:nth-child(2)>img {
         width: 100%;
         border-radius: 20px;
     }
-    
+
     #wrapContacto>div:nth-child(2) {
         /* border: 1px solid yellow; */
         position: relative;
         height: 500px;
     }
-    
-    mat-label,
-    mat-hint {
+
+    mat-label, mat-hint {
         font-size: 0.8rem;
     }

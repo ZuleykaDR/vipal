@@ -73,6 +73,12 @@ export class NavbarComponent implements OnInit {
     electricidad.style.borderBottom = '1px solid gray';
     electricidad.style.width = '100%';
 
+    const ebanisteria = document.createElement('li');
+    ebanisteria.innerText = 'Ebanistería';
+    ebanisteria.style.padding = '10px 0px';
+    ebanisteria.style.borderBottom = '1px solid gray';
+    ebanisteria.style.width = '100%';
+
     const divServicio = document.createElement('div');
 
     // divServicio.style.border = '1px solid green';
@@ -84,7 +90,7 @@ export class NavbarComponent implements OnInit {
     divServicio.style.left = '0px';
     divServicio.style.display = 'none';
 
-    ulServicios.append(alumVidrio, remode, gypsum, electricidad);
+    ulServicios.append(alumVidrio, remode, gypsum, electricidad, ebanisteria);
     divServicio.append(ulServicios);
     servicio.append(divServicio);
 
@@ -131,6 +137,11 @@ export class NavbarComponent implements OnInit {
           case 'Electricidad':
             this.route.queryParams.subscribe(queries => {
               this.router.navigate(['/servicios'], { queryParams: { tipoServicio: 'electricidad' } });
+            });
+            break;
+          case 'Ebanistería':
+            this.route.queryParams.subscribe(queries => {
+              this.router.navigate(['/servicios'], { queryParams: { tipoServicio: 'ebanisteria' } });
             });
             break;
         }
