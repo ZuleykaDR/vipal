@@ -77,7 +77,6 @@
     div#divTitulos>h2 {
         font-size: 1.4rem;
     }
-
     #divAcerca {
         /* border: 1px solid blue; */
         margin-top: -150px !important;
@@ -96,7 +95,6 @@
         bottom: 80px;
         height: 120px !important;
     }
-
     div.btnLoque {
         bottom: 80px;
     }
@@ -110,11 +108,13 @@
         height: 650px;
         margin-bottom: 100px; */
     }
-
     #divAcerca {
         /* border: 1px solid blue; */
         /* margin-top: -150px !important; */
         width: 90% !important;
+    }
+    div.btnLoque {
+        bottom: 80px;
     }
 }
 
@@ -137,12 +137,18 @@
     div#divTitulos>h2 {
         font-size: 1.2rem;
     }
+    div.btnLoque {
+        bottom: 40px;
+    }
 }
 
 @media screen and (max-width: 700px) {
     div.divServicio {
         height: 600px;
         /* margin-bottom: 100px; */
+    }
+    div.btnLoque {
+        bottom: 1px;
     }
 }
 
@@ -178,7 +184,6 @@
     h3.tituloTarjetas {
         font-size: 1.1rem !important;
     }
-
 }
 
 @media screen and (max-width: 520px) {
@@ -265,7 +270,11 @@
     }
 }
 
-li, h1, h2, h3, p {
+li,
+h1,
+h2,
+h3,
+p {
     font-family: 'Nunito Sans', sans-serif;
 }
 
@@ -273,6 +282,7 @@ div.bloquesTarjetas {
     /* border: 1px solid rgb(255, 255, 255); */
     flex-direction: row;
 }
+
 
 /* banner */
 
@@ -345,6 +355,7 @@ div.bloquesTarjetas {
     border-radius: 25px;
 }
 
+
 /* lo que hacemos */
 
 #divLoquehacemos {
@@ -352,6 +363,7 @@ div.bloquesTarjetas {
     margin: 200px auto;
     width: 60%;
 }
+
 
 /* #txtLoqueHacemos {
     font-size: 2.5rem;
@@ -454,6 +466,7 @@ div.bloquesTarjetas {
     border-radius: 25px;
 }
 
+
 /* acerca de nosotros */
 
 #divAcerca {
@@ -520,6 +533,7 @@ div.bloquesTarjetas {
     column-gap: 10px;
     justify-content: center;
 }
+
 
 /* #gal2>div>img {
     width: 100%;

@@ -11,11 +11,9 @@
     i.fa-bars {
         display: block;
     }
-
     ul#ulNav {
         display: none;
     }
-
     nav#navbar {
         padding: 0px 20px;
     }
@@ -27,12 +25,14 @@
     }
 }
 
-li, h1, h2 {
+li,
+h1,
+h2 {
     font-family: 'Nunito Sans', sans-serif;
 }
 
 #navbar {
-    background-color: rgb(23, 23, 23);
+    background-color: #171717;
     position: fixed;
     top: 0px;
     left: 0px;
@@ -86,6 +86,7 @@ a {
 
 
 /* responsivo */
+
 #navResp {
     position: fixed;
     /* border: 1px solid yellow; */
@@ -135,6 +136,7 @@ a {
     text-align: center;
     font-size: 1.2rem;
 }
+
 #ulResp>li:nth-child(1) {
     border-top: 1px solid white;
 }
@@ -151,6 +153,7 @@ a {
     padding: 0px;
     transition: all 0.3s;
 }
+
 #ulSubResp>li {
     /* border: 1px solid red; */
     color: rgb(209, 209, 209);
@@ -158,5 +161,4 @@ a {
     padding: 10px;
     width: 60%;
     text-align: left;
-
 }

@@ -11,6 +11,8 @@ export class ServiciosComponent implements OnInit, AfterViewInit {
 
   public tipServicio: Servicio;
 
+  public nombreServicio: string;
+
   constructor(
     private route: ActivatedRoute,
     private router: Router
@@ -30,7 +32,7 @@ export class ServiciosComponent implements OnInit, AfterViewInit {
 
   servicio(): void {
     const tipoServicio = this.route.snapshot.queryParamMap.get('tipoServicio');
-
+     this.nombreServicio = this.route.snapshot.queryParamMap.get('tipoServicio');
     if (tipoServicio === 'remodelacion') {
 
       this.tipServicio = {
@@ -45,8 +47,12 @@ export class ServiciosComponent implements OnInit, AfterViewInit {
           },
           // tslint:disable-next-line: max-line-length
           { imgServicio: '../../../assets/servicios/remodelacion/remodelacion4.png', tituloServicio: 'Remodelación de apartamentos', descServicio: 'Reformar una vivienda es una operación de cuidado y un pequeño acto de fe. Para hacerlo es necesario tener la capacidad de ver, no lo que hay, sino lo que puede haber', revers: true },
+
           // tslint:disable-next-line: max-line-length
-          { imgServicio: '../../../assets/servicios/remodelacion/Construcción-Locales-Comerciales-12.png', tituloServicio: 'Remodelación de locales comerciales', descServicio: 'Sabemos que remodelar puede ser un desafío, pero estamos aquí para ayudarte a sacar el máximo provecho de tu espacio, transformamos lo existente en el espacio que usted deseó.', revers: false },
+          { imgServicio: '../../../assets/servicios/remodelacion/oficina.png', tituloServicio: 'Remodelación de oficinas', descServicio: ' En este primer paso, se debe determinar si el espacio corporativo de tu compañía requiere de una pequeña adaptación o de una reconstrucción total, analizando los objetivos que se pretenden alcanzar con la remodelación.', revers: false },
+          { imgServicio: '../../../assets/servicios/remodelacion/Construcción-Locales-Comerciales-12.png', tituloServicio: 'Remodelación de locales comerciales', descServicio: 'Sabemos que remodelar puede ser un desafío, pero estamos aquí para ayudarte a sacar el máximo provecho de tu espacio, transformamos lo existente en el espacio que usted deseó.', revers: true },
+          // tslint:disable-next-line: max-line-length
+          { imgServicio: '../../../assets/servicios/remodelacion/remodelacion-ultima.png', tituloServicio: 'Remodelaciones', descServicio: 'En las remodelaciones se revisan estándares de estaciones de trabajo, equipamiento, sobre todo, adyacencias funcionales y formas de reunión que cada día van más hacia espacios colaborativos multifuncionales, en lugar de simples salas de reunión. Tomado todo esto en cuenta, el resultado dará una plataforma física, moderna y dinámica que permitirá al personal mayor interacción, mayor confort y mejor rendimiento en todas sus actividades diarias.', revers: false },
         ]
       };
 
@@ -113,18 +119,15 @@ export class ServiciosComponent implements OnInit, AfterViewInit {
         descripcionBanner: 'Canalizaciones, Estructuras, Conductores, Accesorios, Dispositivos',
         servicio: [
           // tslint:disable-next-line: max-line-length
-          {
-            // tslint:disable-next-line: max-line-length
-            imgServicio: '../../../assets/servicios/electricidad/electricidad1.png', tituloServicio: 'Electricidad', descServicio: 'Instalacion y Mantenimiento de caja brekera.', revers: false
-          },
+         
           // tslint:disable-next-line: max-line-length
-          { imgServicio: '../../../assets/servicios/electricidad/mantenimiento-sistema-el.jpeg', tituloServicio: 'Mantenimiento sistema de electrico', descServicio: 'El mantenimiento eléctrico preventivo y correctivo se refiere a la realización de inspecciones rutinarias, pruebas y servicios en el equipo eléctrico, para que se puedan detectar, reducir o suprimir problemas inminentes en dichos equipos.', revers: true },
+          { imgServicio: '../../../assets/servicios/electricidad/electricidad1.png', tituloServicio: 'Mantenimiento sistema de electrico', descServicio: 'El mantenimiento eléctrico preventivo y correctivo se refiere a la realización de inspecciones rutinarias, pruebas y servicios en el equipo eléctrico, para que se puedan detectar, reducir o suprimir problemas inminentes en dichos equipos.', revers: true },
           // tslint:disable-next-line: max-line-length
-          { imgServicio: '../../../assets/servicios/electricidad/distribucion.jpeg', tituloServicio: 'Distribuición del panel hasta el interior de la casa', descServicio: 'El panel es el corazón de la instalación eléctrica, de este salen todos los conductores que alimentan los diferentes circuitos del lugar. Las funciones del panel son distribuir, controlar y proteger todos los circuitos que hayan instalados.', revers: false },
+          { imgServicio: '../../../assets/servicios/electricidad/panel.png', tituloServicio: 'Distribuición del panel hasta el interior de la casa', descServicio: 'El panel es el corazón de la instalación eléctrica, de este salen todos los conductores que alimentan los diferentes circuitos del lugar. Las funciones del panel son distribuir, controlar y proteger todos los circuitos que hayan instalados.', revers: false },
           // tslint:disable-next-line: max-line-length
-          { imgServicio: '../../../assets/servicios/electricidad/iluminarias.jpeg', tituloServicio: 'Luminarias tomas e interruptores.', descServicio: 'Revise periódicamente la instalación eléctrica de su casa, de esta manera podrá encontrar a tiempo conexiones en mal estado, interruptores defectuosos, evitará  posibles accidentes, ahorrará en el consumo de electricidad y en reparaciones de  su instalación o de sus aparatos eléctricos.', revers: true },
+          { imgServicio: '../../../assets/servicios/electricidad/tomas.png', tituloServicio: 'Luminarias tomas e interruptores.', descServicio: 'Revise periódicamente la instalación eléctrica de su casa, de esta manera podrá encontrar a tiempo conexiones en mal estado, interruptores defectuosos, evitará  posibles accidentes, ahorrará en el consumo de electricidad y en reparaciones de  su instalación o de sus aparatos eléctricos.', revers: true },
           // tslint:disable-next-line: max-line-length
-          { imgServicio: '../../../assets/servicios/electricidad/tomas.jpeg', tituloServicio: 'Instalación de tomas y lámparas', descServicio: 'Si necesitas instalar un toma o una lámpara en tu hogar, confía en los profesionales. Te enviamos un electricista al mejor precio para conectar e instalar lámparas de techo, de pared, de bajo consumo, led, fluorescente, incandescente, para cada espacio de tu  casa.', revers: false },
+          { imgServicio: '../../../assets/servicios/electricidad/iluminarias.png', tituloServicio: 'Instalación de tomas y lámparas', descServicio: 'Si necesitas instalar un toma o una lámpara en tu hogar, confía en los profesionales. Te enviamos un electricista al mejor precio para conectar e instalar lámparas de techo, de pared, de bajo consumo, led, fluorescente, incandescente, para cada espacio de tu  casa.', revers: false },
           // tslint:disable-next-line: max-line-length
           { imgServicio: '../../../assets/servicios/electricidad/bombas.jpeg', tituloServicio: 'Instalación de sensores y bombas de agua', descServicio: 'Un pequeño interruptor de boya se mantiene flotando en el agua, marcando el punto de nivel deseado. En el momento en que el agua sobrepasa ese límite, la boya acciona el interruptor de nivel, que nos avisará de lo ocurrido', revers: true },
         ]
@@ -147,6 +150,8 @@ export class ServiciosComponent implements OnInit, AfterViewInit {
           { imgServicio: '../../../assets/servicios/Ebanisteria/apto.png', tituloServicio: 'Fabricamos muebles para la decoración de tu apartamento', descServicio: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley', revers: true },
           // tslint:disable-next-line: max-line-length
           { imgServicio: '../../../assets/servicios/Ebanisteria/oficina.jpg', tituloServicio: 'Muebles para Oficina', descServicio: 'Diseñamos y fabricamos muebles a mano, con madera de la mejor calidad.', revers: false },
+          { imgServicio: '../../../assets/servicios//Ebanisteria/madera4.png', tituloServicio: 'Muebles para Oficina', descServicio: 'Diseñamos y fabricamos muebles a mano, con madera de la mejor calidad.', revers: true },
+          { imgServicio: '../../../assets/servicios/Ebanisteria/eba5.png', tituloServicio: 'Muebles para Oficina', descServicio: 'Diseñamos y fabricamos muebles a mano, con madera de la mejor calidad.', revers: false },
    
         ]
 

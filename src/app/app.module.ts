@@ -12,6 +12,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { LayoutModule } from '@angular/cdk/layout';
+import { CarouselComponent } from './compartidos/carousel/carousel.component';
 
 // angular material
 import { MatInputModule } from '@angular/material/input';
@@ -19,6 +20,8 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 
 // provider
 import { BtnResponsivo } from './scripts/bars';
+import {Whatsapp} from './btnWhatsaap/btnWhatsaap'
+
 
 @NgModule({
   declarations: [
@@ -27,7 +30,8 @@ import { BtnResponsivo } from './scripts/bars';
     NavbarComponent,
     FooterComponent,
     ServiciosComponent,
-    ContactoComponent
+    ContactoComponent,
+    CarouselComponent
   ],
   imports: [
     BrowserModule,
@@ -41,7 +45,8 @@ import { BtnResponsivo } from './scripts/bars';
     LayoutModule
   ],
   providers: [
-    BtnResponsivo
+    BtnResponsivo,
+    Whatsapp
   ],
   bootstrap: [AppComponent]
 })
