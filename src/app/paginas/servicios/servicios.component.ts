@@ -144,14 +144,14 @@ export class ServiciosComponent implements OnInit, AfterViewInit {
           // tslint:disable-next-line: max-line-length
           {
             // tslint:disable-next-line: max-line-length
-            imgServicio: '../../../assets/servicios/Ebanisteria/verde92-013.jpg', tituloServicio: 'Ebanistería para la remodelación de tu casa', descServicio: 'Instalacion y Mantenimiento de caja brekera.', revers: false
+            imgServicio: '../../../assets/servicios/Ebanisteria/verde92-013.jpg', tituloServicio: 'Ebanistería para la remodelación de tu casa', descServicio: 'La madera es un material ligero y resistente, con el que se construyen casas seguras, bellas, cálidas, confortables y muy acogedoras.', revers: false
           },
           // tslint:disable-next-line: max-line-length
-          { imgServicio: '../../../assets/servicios/Ebanisteria/apto.png', tituloServicio: 'Fabricamos muebles para la decoración de tu apartamento', descServicio: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley', revers: true },
+          { imgServicio: '../../../assets/servicios/Ebanisteria/apto.png', tituloServicio: 'Fabricamos muebles para la decoración de tu apartamento', descServicio: 'Un mueble inadecuado puede perjudicar una buena decoración.Por el contrario, uno bien elegido realza la decoración y define el estilo de la habitación. Te ayudan a crear el estilo, organizar el espacio, y asi llevar una vida más confortable', revers: true },
           // tslint:disable-next-line: max-line-length
           { imgServicio: '../../../assets/servicios/Ebanisteria/oficina.jpg', tituloServicio: 'Muebles para Oficina', descServicio: 'Diseñamos y fabricamos muebles a mano, con madera de la mejor calidad.', revers: false },
-          { imgServicio: '../../../assets/servicios//Ebanisteria/madera4.png', tituloServicio: 'Muebles para Oficina', descServicio: 'Diseñamos y fabricamos muebles a mano, con madera de la mejor calidad.', revers: true },
-          { imgServicio: '../../../assets/servicios/Ebanisteria/eba5.png', tituloServicio: 'Muebles para Oficina', descServicio: 'Diseñamos y fabricamos muebles a mano, con madera de la mejor calidad.', revers: false },
+          { imgServicio: '../../../assets/servicios//Ebanisteria/madera4.png', tituloServicio: 'Armarios para cocina', descServicio: 'Lo primero que debemos saber es que los muebles determinan el estilo de una cocina y es que estamos ante uno de sus elementos más importantes. Cuando hablamos de mobiliario de cocina nos referimos a mesa, sillas o encimera, aunque existen muchos complementos que también pueden tener cabida en la cocina', revers: true },
+          { imgServicio: '../../../assets/servicios/Ebanisteria/restaura.png', tituloServicio: 'Restauración de muebles', descServicio: 'Gracias a nuestra reparación, conseguirás una pieza única totalmente funcional y decorativa. Los muebles que una vez fueron nuevos, van envejecimiento poco a poco. El paso del tiempo también hace mella en ellos.', revers: false },
    
         ]
 

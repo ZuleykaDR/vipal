@@ -51,6 +51,7 @@ h2 {
     align-items: center;
     justify-content: center;
     flex-direction: row;
+    margin-bottom: 1px;
 }
 
 a {
@@ -76,8 +77,9 @@ a {
 }
 
 #divImg {
-    /* border: 1px solid red; */
-    height: 90%;
+    height: 100%;
+    width: 232px;
+    padding: 8px;
 }
 
 #divImg>img {
